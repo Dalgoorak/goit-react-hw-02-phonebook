@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 
-class ContactForm extends React.Component {
+export class ContactForm extends React.Component {
   state = {
     name: '',
     number: '',
@@ -65,5 +65,3 @@ ContactForm.PropType = {
   name: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
 };
-
-export default ContactForm;
